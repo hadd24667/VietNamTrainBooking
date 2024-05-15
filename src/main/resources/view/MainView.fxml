@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../../resources/img/mainview.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane disable="true" opacity="0.4" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: black;" />
+      <Pane layoutX="75.0" layoutY="190.0" prefHeight="110.0" prefWidth="850.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="From" textFill="#000000b2">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="14.0" text="To" textFill="#000000b2">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="21.0" layoutY="37.0" prefHeight="35.0" prefWidth="160.0" text="Ga Hue">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="199.0" layoutY="37.0" prefHeight="35.0" prefWidth="160.0" text="Ga Da Nang">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="375.0" layoutY="14.0" text="Departure Time" textFill="#000000b2">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="14.0" text="Return Time" textFill="#000000b2">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="375.0" layoutY="37.0" prefHeight="37.0" prefWidth="160.0" />
+            <DatePicker layoutX="547.0" layoutY="37.0" prefHeight="37.0" prefWidth="160.0" />
+            <Button layoutX="732.0" layoutY="37.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #5479F7;" text="SEARCH" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="18.07" offsetY="3.0" radius="7.8025" spread="0.06" width="15.14">
+               <color>
+                  <Color opacity="0.8740457892417908" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
